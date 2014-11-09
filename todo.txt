@@ -1,8 +1,7 @@
 Données:
 - Comment importer les données: tout uploader (trop long), trouver des torrents et les telecharger sur le serveur (trop long de chercher les torrents, trop de contrainte t411 ratio)
 - Associer chaque film a un ID IMDB
-- Est ce que je mets tout le contenu du disque dur
-- Est ce que je laisse la possiblité d'ajouter du contenu aux autres.
-
+- Est ce que je mets tout le contenu du disque dur (films oui, reduire film HD).
+- Associer les episodes des séries, a un torrent. Cela permetra de les supprimer plus tard pour gagner de l'espace, mais en laissant une possibilté de recuperer les episodes facilement.
 Site:
--Faire un outil de recherche utilisant l'api IMDB (trouver un moyen de seulement rechercher sur les films du site.
+-Faire un outil de recherche utilisant l'api IMDB (trouver un moyen de seulement rechercher sur les films du site).
