@@ -3,3 +3,8 @@ Données:
 - Associer les episodes des séries, a un torrent. Cela permetra de les supprimer plus tard pour gagner de l'espace, mais en laissant une possibilté de recuperer les episodes facilement.
 Site:
 -Faire un outil de recherche utilisant l'api IMDB (trouver un moyen de seulement rechercher sur les films du site).
+
+
+http://www.omdbapi.com/
+http://www.myapifilms.com/
+https://www.themoviedb.org/
