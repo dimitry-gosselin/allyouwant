@@ -1,8 +1,14 @@
 Données:
-- Associer chaque film et epidsode a un ID IMDB
-- Associer les episodes des séries, a un torrent. Cela permetra de les supprimer plus tard pour gagner de l'espace, mais en laissant une possibilté de recuperer les episodes facilement.
+
+- Associer chaque film et epidsode à un ID IMDB
+- Associer les episodes des séries,  un torrent. 
+  Cela permetra de les supprimer plus tard pour gagner de l'espace,
+  mais en laissant une possibilté de recuperer les episodes facilement.
+  
 Site:
--Faire un outil de recherche utilisant l'api IMDB (trouver un moyen de seulement rechercher sur les films du site).
+
+-Faire un outil de recherche / Ajout utilisant l'api IMDB (trouver un moyen de seulement rechercher sur les films du site).
+-Permetre la suppression de données local ( ex: torrent dispo ect)
 
 
 http://www.omdbapi.com/
