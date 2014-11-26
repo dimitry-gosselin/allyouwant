@@ -11,5 +11,8 @@ Sur la VM:
 - taper la commande: php artisan serve (C'est pour demarer le site)
 - Ouvrir le navigateur de la VM et aller sur l'adresse indiquer dans le terminal (Normallement localhost:8000(de memoire, donc pas sur)).
 
+Avant de coder:
+- Il faudra lier ggit à votre compte github
+/////////A DEFINIR////////////
 
 Pour la doc aller sur le site de laravel et sur laracast (https://laracasts.com/series/laravel-from-scratch). Il y a plein de videos trés bien sur laracast
