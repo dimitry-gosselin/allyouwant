@@ -14,3 +14,30 @@ Site:
 http://www.omdbapi.com/
 http://www.myapifilms.com/
 https://www.themoviedb.org/
+
+
+
+http://wiki.gromez.fr/dev/api/allocine
+exemple : 
+Les APIs
+Les différentes APIs s'appellent toutes en GET. Le POST ne semble pas fonctionner.
+
+Recherche : search
+URL : http://api.allocine.fr/xml/search
+Paramètres
+q : chaîne à chercher (chaîne de caractères)
+partner : schéma XML à utiliser en fonction des partenaires (1, 2, 3, 4)
+json (optionnel) : renvoie le résultat au format JSON si json=1 (booléen)
+count (optionnel) : nombre de résultats à renvoyer (entier)
+profile (optionnel) : degré d'informations renvoyées (énumération : small, medium, large)
+page (optionnel) : numéro de la page de résultats à afficher (10 résultats par page par défaut)
+declare (optionnel) : aucune idée !?
+Informations sur un film : movie
+URL : http://api.allocine.fr/xml/movie
+Paramètres
+code : identifiant du film (entier)
+partner : schéma XML à utiliser en fonction des partenaires (1, 2, 3, 4)
+json (optionnel) : renvoie le résultat au format JSON si json=1 (booléen)
+profile (optionnel) : degré d'informations renvoyées (énumération : small, medium, large)
+format (optionnel) : format vidéo !? (h264, ???)
+version (optionnel) : aucune idée !?
