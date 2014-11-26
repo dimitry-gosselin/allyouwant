@@ -7,8 +7,13 @@ Données:
   
 Site:
 
--Faire un outil de recherche / Ajout utilisant l'api IMDB (trouver un moyen de seulement rechercher sur les films du site).
+-Faire un outil de recherche* / Ajout utilisant l'api IMDB (trouver un moyen de seulement rechercher sur les films du site).
 -Permetre la suppression de données local ( ex: torrent dispo ect)
+
+* les listes  (titres, auteurs...)  seront générer grâce à l'appel aux api mais la recherche se fera en local grace aux id enregitrer.
+Pour la liste des films dispo on ne pourra les trouver que en local (id) et ensuite on fait appel 
+à lapi pour connaitres les informations relative.
+Pour les ajouts api => ajout en bdd
 
 
 http://www.omdbapi.com/
@@ -41,3 +46,15 @@ json (optionnel) : renvoie le résultat au format JSON si json=1 (booléen)
 profile (optionnel) : degré d'informations renvoyées (énumération : small, medium, large)
 format (optionnel) : format vidéo !? (h264, ???)
 version (optionnel) : aucune idée !?
+
+Tout d'abord, une page donnant les film du moment:
+http://api.allocine.fr/rest/v3/movielist?count=25&filter=nowshowing&format=json&order=theatercount&page=1&partner=yW5kcm9pZC12M3M
+
+Ensuite, une recherche avec le mot potter:
+http://api.allocine.fr/rest/v3/search?count=5&filter=movie,theater&format=json&page=1&partner=yW5kcm9pZC12M3M&profile=medium&q=potter
+
+Et pour finir un film:
+http://api.allocine.fr/rest/v3/movie?code=134925&format=json&media=mp4-lc&partner=yW5kcm9pZC12M3M&profile=large
+
+sinon j'ai aussi trouver un helper :
+https://github.com/etienne-gauvin/api-allocine-helper
