@@ -8,11 +8,14 @@ Installer la VM:
 Sur la VM:
 - Ouvrir un terminal
 - Aller dans le dossier /var/www/allyouwant/allyouwant (Oui je sais c'est stupide, mais je me suis embouillé a l'installlation,vouz pourrez changer si vous voulez, enfin je crois.)
-- taper la commande: php artisan serve (C'est pour demarer le site)
+- taper la commande: > php artisan serve (C'est pour demarer le site)
 - Ouvrir le navigateur de la VM et aller sur l'adresse indiquer dans le terminal (Normallement localhost:8000(de memoire, donc pas sur)).
 
 Avant de coder:
-- Il faudra lier ggit à votre compte github
-/////////A DEFINIR////////////
+- Il faudra lier git à votre compte github
+/////////A Verifier////////////
+> git config --global user.email "your_email@example.com" (Il faut utiliser le mail que vous avez indiquer sur votre compte github)
+> cat /.ssh/id_rsa.pub (Copier le resultat et obtenu et ajouter sur votre compte github: https://github.com/settings/ssh)
+/////////A Verifier////////////
 
 Pour la doc aller sur le site de laravel et sur laracast (https://laracasts.com/series/laravel-from-scratch). Il y a plein de videos trés bien sur laracast
