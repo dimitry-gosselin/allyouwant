@@ -14,7 +14,7 @@ A la fin, faire un commit:
 > git add . 
 > git rm nom_dun_fichier (Si il y a eu des fichiers supprimer il faut l'indiquer avec cette commande)
 > git commit -m "mesage decrivant le commit"
-> git fo (Cette commande permet de recuperer les modifications ayant eu lieu pendant le developpement de la banche).
+> git fetch origin (Cette commande permet de recuperer les modifications ayant eu lieu pendant le developpement de la banche).
 > git rebase origin/master (Cette commande d'ajouter les modification recuperer avec git fo aux votre (WARNING risque de conflit voir plus bas))
 > git push origin nom_branche (On envoie la branche sur github, pour que je puissse la tester)
 https://github.com/dimitry-gosselin/allyouwant/network ((aller a cette adresse pour voir qi votre btranche est bien arrvier)
