@@ -3,7 +3,7 @@ Tout sa est fait de tete (a l'arache). Donc en cas de probleme contacter moi.
 Installer la VM:
 -Installer Oracle virtualBox(http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html)
 - Importer la VM
-- Demarer la VM
+- Demarer la VM (mot de passe: rclens)
 
 Sur la VM:
 - Ouvrir un terminal
