@@ -9,11 +9,14 @@ use Illuminate\Database\Migrations\Migration;
 |
 | ici le script de migration pour recrée la bdd originel à modifier.
 | ci dessous les differente etape pour se servir de la migration : ( commencer par l'etape 2)
-| 1-moi$ php artisan migrate make CreateTable
+| 1-moi$ php artisan migrate:make CreateTable
 | permet de cree se fichier avec les fonction up et down empty 
 | apres voir rempli se fichier et supprimer toute les tables de la bdd
-|
-|
+| 2-moi$ php artisan migrate
+| lance le fichier de migration
+| 3-moi$ php artisan migrate:rollback
+| permet de revenir en arriere ( supprime la migration ( en cas d'erreur ou de clean)
+| refaire etape 2 pour recrée la table
 |
 |
 */
