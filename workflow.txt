@@ -16,6 +16,7 @@ Apprés la création develloper tout ce que vous voulez.
 A la fin, faire un commit:
 > git add . 
 > git rm nom_dun_fichier (Si il y a eu des fichiers supprimer il faut l'indiquer avec cette commande)
+> git pull Cette commande permet de recuperer les modifications du master
 > git commit -m "mesage decrivant le commit" => le mieu serai aussi de numeroter votre commit pour savoir quand faire marche arrière si jamais il faut
 > git fetch origin (Cette commande permet de recuperer les modifications ayant eu lieu pendant le developpement de la banche).
 > git rebase origin/master (Cette commande d'ajouter les modification recuperer avec git fo aux votre (WARNING risque de conflit voir plus bas))
