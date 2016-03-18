@@ -4,36 +4,38 @@ Si vous n'etes pas d'accord avec ma proposition, n'hesiter pas a m'insulter par 
 jugerais necessaire. => trolololo ....
 
 Procesus de devellopement:
+========================
 On va utiliser les branches par simpliciter. 
 En gros, pour chaque bique de l'application vous ferrez une branche AVEC VOTRE NOM
 et une branche par gros bloc par exemple WILLIAM_gestionLibrairie et dedan je vais la liste la recherche ect ect en rapport avec la librairie
 
 Creation de la branche:
+========================
 > git checkout -b VOTRENOM_nom_branche origin/master
 
 Apprés la création develloper tout ce que vous voulez.
 
 A la fin, faire un commit:
-> git add . 
-> git rm nom_dun_fichier (Si il y a eu des fichiers supprimer il faut l'indiquer avec cette commande)
-> git pull Cette commande permet de recuperer les modifications du master
-> git commit -m "mesage decrivant le commit" => le mieu serai aussi de numeroter votre commit pour savoir quand faire marche arrière si jamais il faut
-> git fetch origin (Cette commande permet de recuperer les modifications ayant eu lieu pendant le developpement de la banche).
-> git rebase origin/master (Cette commande d'ajouter les modification recuperer avec git fo aux votre (WARNING risque de conflit voir plus bas))
-> git push origin nom_branche (On envoie la branche sur github, pour que je puissse la tester)
+-> git add . 
+-> git rm nom_dun_fichier (Si il y a eu des fichiers supprimer il faut l'indiquer avec cette commande)
+-> git pull Cette commande permet de recuperer les modifications du master
+-> git commit -m "mesage decrivant le commit" => le mieu serai aussi de numeroter votre commit pour savoir quand faire marche arrière -si jamais il faut
+-> git fetch origin (Cette commande permet de recuperer les modifications ayant eu lieu pendant le developpement de la banche).
+-> git rebase origin/master (Cette commande d'ajouter les modification recuperer avec git fo aux votre (WARNING risque de conflit voir plus bas))
+-> git push origin nom_branche (On envoie la branche sur github, pour que je puissse la tester)
 https://github.com/dimitry-gosselin/allyouwant/network ((aller a cette adresse pour voir qi votre btranche est bien arrvier)
 
 
 En cas de conflit
-Lors du rebase il est possible que des conflits apparaissent. 
-Cela arrive quand un fichier a été modifié par une autre personne et que vous avez recuperer cette modif avec le git fo. 
-Si, c'est le cas le rebase s'arrete et il faut lancer la commande:
-> git mergetool (il demande d'autre truc appuyer sur ENTER sans reflechir)
-Une fenetre proposant 3 fichier sera proposé. Il faudra faire en sorte que les 3 versions soit les memes. 
-Pour sa il faudra ajouter vos modifications (qui devrait etre dans l'un des 3 fichiers) et l'ajouter dans les autres fichiers. 
-Il faudra egallement faire la meme operation pour les ajouts de l'autre personnes. 
-Si c'est trop compliquer, fermer la fenetre avec les fichiers et taper:
-> git rebase --abort
-Si c'est reussi, sauvegarder les 3 fichiers
-> git rebase --continue
-Il est possible que d'autre conflit (voir le meme) apparaisse. Dans ce cas, reiterer le mergetool jusqu'a ce qu'il n'y ait plus de conflit.
+-Lors du rebase il est possible que des conflits apparaissent. 
+-Cela arrive quand un fichier a été modifié par une autre personne et que vous avez recuperer cette modif avec le git fo. 
+-Si, c'est le cas le rebase s'arrete et il faut lancer la commande:
+-> git mergetool (il demande d'autre truc appuyer sur ENTER sans reflechir)
+-Une fenetre proposant 3 fichier sera proposé. Il faudra faire en sorte que les 3 versions soit les memes. 
+-Pour sa il faudra ajouter vos modifications (qui devrait etre dans l'un des 3 fichiers) et l'ajouter dans les autres fichiers. 
+-Il faudra egallement faire la meme operation pour les ajouts de l'autre personnes. 
+-Si c'est trop compliquer, fermer la fenetre avec les fichiers et taper:
+-> git rebase --abort
+-Si c'est reussi, sauvegarder les 3 fichiers
+-> git rebase --continue
+-Il est possible que d'autre conflit (voir le meme) apparaisse. Dans ce cas, reiterer le mergetool jusqu'a ce qu'il n'y ait plus de conflit.
